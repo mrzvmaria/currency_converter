@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Current change</title>
-    <style>
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <style>
         label {
             display: block;
             font-size: 30px;
@@ -14,13 +16,20 @@
             height: 50px;
             font-size: 30px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <label for="rub">RUB</label>
-    <input id="rub" type="text">
-    <label for="usd">USD</label>
-    <input id="usd" type="text">
+    <div class="converter">
+        <h1>Currency converter</h1>
+        <div class="rubles">
+            <label for="rub">RUB</label>
+            <input id="rub" type="text">
+        </div>
+        <div class="dollars">
+            <label for="usd">USD</label>
+            <input id="usd" type="text">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
