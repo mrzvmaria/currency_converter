@@ -9,11 +9,6 @@ inputRub.addEventListener('input', () => {
   request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
   request.send();
 
-  //status - статус сервера (404 not found)
-  //statusText - текстовое сообщение от сервера
-  //responseText - текст ответа сервера (от бэкэдн-разработчика)
-  //readyState - текущее состояние запроса
-
   request.addEventListener('readystatechange', function() {
     if (request.readyState === 4 && request.status == 200) {
       let data = JSON.parse(request.response);
